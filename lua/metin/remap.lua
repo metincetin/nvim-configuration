@@ -22,10 +22,22 @@ vim.keymap.set('n', '<leader>wsh', ":vsp<cr>")
 vim.keymap.set('n', '<leader>wsv', ":sp<cr>")
 
 vim.keymap.set('n', '<leader>wsv', ":sp<cr>")
-vim.keymap.set('n', '<leader>wa', ":%bd|e#<cr>")
+vim.keymap.set('n', '<leader>wa', ":only<cr>")
 
 vim.keymap.set('n', '<leader>wo', ":wincmd w<cr>")
 
 vim.keymap.set('n', '<leader>bp', ":bprevious<cr>")
 vim.keymap.set('n', '<leader>bn', ":bnext<cr>")
-vim.keymap.set('n', '<leader>bx', ":wq!<cr>")
+vim.keymap.set('n', '<leader>bx', ":bd<cr>")
+
+vim.keymap.set('i', "<M-k>", "<Up>")
+vim.keymap.set('i', "<M-j>", "<Down>")
+vim.keymap.set('i', "<M-l>", "<Right>")
+vim.keymap.set('i', "<M-h>", "<Left>")
+vim.keymap.set('i', "<M-w>", "<C-Right>")
+vim.keymap.set('i', "<M-b>", "<C-Left>")
+
+
+vim.keymap.set("n", "<C-s>", function()
+	vim.cmd(":keepjumps normal $a;")
+end)
