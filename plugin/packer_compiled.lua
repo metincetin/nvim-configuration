@@ -172,7 +172,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   ["nvim-window"] = {
-    config = { "\27LJ\2\n²\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\3\vborder\vsingle\fhint_hl\tBold\14normal_hl\vNormal\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0" },
+    config = { "\27LJ\2\n²\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\3\fhint_hl\tBold\14normal_hl\vNormal\vborder\vsingle\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0" },
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/nvim-window",
     url = "https://github.com/yorickpeterse/nvim-window"
@@ -191,6 +191,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/metin/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
@@ -227,6 +232,11 @@ _G.packer_plugins = {
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
     url = "https://github.com/mg979/vim-visual-multi"
   },
+  vterm = {
+    loaded = true,
+    path = "/home/metin/.local/share/nvim/site/pack/packer/start/vterm",
+    url = "https://github.com/keitokuch/vterm"
+  },
   ["zen-mode.nvim"] = {
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
@@ -237,16 +247,16 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: nvim-window
 time([[Config for nvim-window]], true)
-try_loadstring("\27LJ\2\n²\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\3\vborder\vsingle\fhint_hl\tBold\14normal_hl\vNormal\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0", "config", "nvim-window")
+try_loadstring("\27LJ\2\n²\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\3\fhint_hl\tBold\14normal_hl\vNormal\vborder\vsingle\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0", "config", "nvim-window")
 time([[Config for nvim-window]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

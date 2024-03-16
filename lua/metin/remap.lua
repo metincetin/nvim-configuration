@@ -21,10 +21,10 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set('n', '<leader>wsh', ":vsp<cr>")
 vim.keymap.set('n', '<leader>wsv', ":sp<cr>")
 
-vim.keymap.set('n', '<leader>wsv', ":sp<cr>")
 vim.keymap.set('n', '<leader>wa', ":only<cr>")
 
 vim.keymap.set('n', '<leader>wo', ":wincmd w<cr>")
+
 
 vim.keymap.set('n', '<leader>bp', ":bprevious<cr>")
 vim.keymap.set('n', '<leader>bn', ":bnext<cr>")
