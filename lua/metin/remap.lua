@@ -37,6 +37,13 @@ vim.keymap.set('i', "<M-h>", "<Left>")
 vim.keymap.set('i', "<M-w>", "<C-Right>")
 vim.keymap.set('i', "<M-b>", "<C-Left>")
 
+vim.keymap.set('n', '<leader>fed', ":e ~/.config/nvim<cr>")
+
+
+vim.keymap.set('n', '<leader>bp', ":bprevious<cr>")
+vim.keymap.set('n', '<leader>bn', ":bnext<cr>")
+vim.keymap.set('n', '<leader>bx', ":bd<cr>")
+
 
 vim.keymap.set("n", "<C-s>", function()
 	vim.cmd(":keepjumps normal $a;")
