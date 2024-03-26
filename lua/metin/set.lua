@@ -14,7 +14,7 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.opt.signcolumn =  "yes"
-vim.opt.guicursor = "n-v-i-c:block-Cursor"
+--vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 vim.g.mapleader = " "
 

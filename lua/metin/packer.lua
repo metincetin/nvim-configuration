@@ -111,5 +111,10 @@ return require('packer').startup(function(use)
 	  "Exafunction/codeium.vim"
   }
 
+  use{
+	  "voldikss/vim-floaterm"
+  }
+
+
 end)
 
