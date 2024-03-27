@@ -111,6 +111,15 @@ return require('packer').startup(function(use)
 
   use{"unblevable/quick-scope"}
 
+  use({
+	"folke/trouble.nvim",
+	config = function()
+		vim.keymap.set("n", "<leader>gt", "<cmd>:TroubleToggle<cr>")
+	end
+  })
+
+	use {'nvim-tree/nvim-web-devicons'}
+
 
 end)
 
