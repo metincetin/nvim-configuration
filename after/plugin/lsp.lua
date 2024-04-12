@@ -11,18 +11,32 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 		-- these will be buffer-local keybindings
 		-- because they only work if you have an active language server
+		--
+		local telescope = require("telescope.builtin")
+
 
 		vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
-		vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
+		vim.keymap.set('n', 'gd', telescope.lsp_definitions, opts)
 		vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
-		vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
-		vim.keymap.set('n', 'gO', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
+		vim.keymap.set('n', 'gi', telescope.lsp_implementations, opts)
+		vim.keymap.set('n', 'gO', telescope.lsp_type_definitions, opts)
 		vim.keymap.set('n', 'go', '<cmd>ClangdSwitchSourceHeader<cr>')
-		vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
+		vim.keymap.set('n', 'gr', telescope.lsp_references, opts)
+		vim.keymap.set('n', 'gt', telescope.lsp_dynamic_workspace_symbols, opts)
 		vim.keymap.set('n', 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
 		vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
 		vim.keymap.set({ 'n', 'x' }, 'g=', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 		vim.keymap.set('n', 'g.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+
+
+
+		local client = vim.lsp.get_client_by_id(event.data.client_id)
+
+		-- ls-overloads
+		  --- Guard against servers without the signatureHelper capability
+		  if client.server_capabilities.signatureHelpProvider then
+			require('lsp-overloads').setup(client, { })
+		  end
 	end
 })
 
