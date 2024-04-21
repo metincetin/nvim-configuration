@@ -69,9 +69,14 @@ cmp.setup({
 		{ name = 'nvim_lsp' },
 	},
 	completion = {
-		completeopt = "menu,menuone,preview,noselect",
-
+		completeopt = "menu,menuone,preview,noselect,noinsert",
 	},
+	formatting = {
+		format = function(entry, vim_item)
+			vim_item.menu = entry:get_completion_item().detail
+			return vim_item
+		end
+	};
 	mapping = cmp.mapping.preset.insert({
 		-- Enter key confirms completion item
 		['<CR>'] = cmp.mapping.confirm({ select = true }),

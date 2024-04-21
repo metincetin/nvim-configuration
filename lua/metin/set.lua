@@ -33,3 +33,8 @@ vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
     vim.diagnostic.open_float(nil, {focus=false})
   end
 })
+
+if vim.g.neovide then
+	-- disable cursor animation
+	vim.g.neovide_cursor_animation_length = 0
+end
