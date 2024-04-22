@@ -29,7 +29,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
 		vim.keymap.set({ 'n', 'x' }, 'g=', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 		vim.keymap.set('n', 'g.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
-	  vim.keymap.set("n", "<leader>glc", "<cmd>GitConflictListQf<CR>")
+		  vim.keymap.set("n", "<leader>glc", "<cmd>GitConflictListQf<CR>")
 
 
 

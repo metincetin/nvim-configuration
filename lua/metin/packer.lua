@@ -211,4 +211,17 @@ return require('packer').startup(function(use)
 			]])
 		end
 	}
+
+	use{
+		"lcford2/calc.nvim",
+		config = function()
+
+			local calc = require("calc_nvim")
+
+			calc.setup({
+			  float_format="0.3",
+			})
+			vim.keymap.set("v", "<C-c>", calc.calculate, {})
+		end
+	}
 end)
