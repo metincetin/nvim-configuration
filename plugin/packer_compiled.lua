@@ -169,7 +169,7 @@ _G.packer_plugins = {
     url = "https://github.com/arkav/lualine-lsp-progress"
   },
   ["lualine.nvim"] = {
-    config = { "\27LJ\2\nX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimó\b\1\0\6\0(\0?6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0004\5\0\0=\5\t\0044\5\0\0=\5\n\4=\4\v\0034\4\0\0=\4\f\0035\4\r\0=\4\14\3=\3\16\0025\3\19\0005\4\17\0003\5\18\0>\5\2\4=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\3=\3\31\0025\3!\0004\4\3\0003\5 \0>\5\1\4=\4\20\0034\4\0\0=\4\22\0035\4\"\0=\4\24\0035\4#\0=\4\26\0034\4\0\0=\4\28\0034\4\0\0=\4\30\3=\3$\0024\3\0\0=\3%\0024\3\0\0=\3\n\0024\3\0\0=\3&\0024\3\0\0=\3'\2B\0\2\1K\0\1\0\15extensions\20inactive_winbar\ftabline\22inactive_sections\1\2\0\0\rlocation\1\2\0\0\rfilename\1\0\6\14lualine_y\0\14lualine_c\0\14lualine_b\0\14lualine_a\0\14lualine_z\0\14lualine_x\0\0\rsections\14lualine_z\1\2\0\0\rlocation\14lualine_y\1\2\0\0\rprogress\14lualine_x\1\4\0\0\rencoding\15fileformat\rfiletype\14lualine_c\1\3\0\0\rfilename\17lsp_progress\14lualine_b\1\4\0\0\vbranch\tdiff\16diagnostics\14lualine_a\1\0\6\14lualine_y\0\14lualine_c\0\14lualine_b\0\14lualine_a\0\14lualine_z\0\14lualine_x\0\0\1\2\0\0\tmode\foptions\1\0\a\22inactive_sections\0\15extensions\0\vwinbar\0\rsections\0\ftabline\0\20inactive_winbar\0\foptions\0\frefresh\1\0\3\ftabline\3è\a\vwinbar\3è\a\15statusline\3è\a\17ignore_focus\23disabled_filetypes\vwinbar\15statusline\1\0\2\vwinbar\0\15statusline\0\23section_separators\1\0\2\nright\bî‚²\tleft\bî‚°\25component_separators\1\0\2\nright\bî‚³\tleft\bî‚±\1\0\t\frefresh\0\25component_separators\0\ntheme\tauto\18icons_enabled\2\17globalstatus\1\25always_divide_middle\2\17ignore_focus\0\23disabled_filetypes\0\23section_separators\0\nsetup\flualine\frequire\0" },
+    config = { "\27LJ\2\nX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimó\b\1\0\6\0(\0?6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0004\5\0\0=\5\t\0044\5\0\0=\5\n\4=\4\v\0034\4\0\0=\4\f\0035\4\r\0=\4\14\3=\3\16\0025\3\19\0005\4\17\0003\5\18\0>\5\2\4=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\3=\3\31\0025\3!\0004\4\3\0003\5 \0>\5\1\4=\4\20\0034\4\0\0=\4\22\0035\4\"\0=\4\24\0035\4#\0=\4\26\0034\4\0\0=\4\28\0034\4\0\0=\4\30\3=\3$\0024\3\0\0=\3%\0024\3\0\0=\3\n\0024\3\0\0=\3&\0024\3\0\0=\3'\2B\0\2\1K\0\1\0\15extensions\20inactive_winbar\ftabline\22inactive_sections\1\2\0\0\rlocation\1\2\0\0\rfilename\1\0\6\14lualine_b\0\14lualine_a\0\14lualine_y\0\14lualine_z\0\14lualine_x\0\14lualine_c\0\0\rsections\14lualine_z\1\2\0\0\rlocation\14lualine_y\1\2\0\0\rprogress\14lualine_x\1\4\0\0\rencoding\15fileformat\rfiletype\14lualine_c\1\3\0\0\rfilename\17lsp_progress\14lualine_b\1\4\0\0\vbranch\tdiff\16diagnostics\14lualine_a\1\0\6\14lualine_b\0\14lualine_a\0\14lualine_y\0\14lualine_z\0\14lualine_x\0\14lualine_c\0\0\1\2\0\0\tmode\foptions\1\0\a\vwinbar\0\22inactive_sections\0\rsections\0\ftabline\0\20inactive_winbar\0\foptions\0\15extensions\0\frefresh\1\0\3\vwinbar\3è\a\15statusline\3è\a\ftabline\3è\a\17ignore_focus\23disabled_filetypes\vwinbar\15statusline\1\0\2\vwinbar\0\15statusline\0\23section_separators\1\0\2\nright\bî‚²\tleft\bî‚°\25component_separators\1\0\2\nright\bî‚³\tleft\bî‚±\1\0\t\frefresh\0\25component_separators\0\ntheme\tauto\18icons_enabled\2\17globalstatus\1\25always_divide_middle\2\17ignore_focus\0\23disabled_filetypes\0\23section_separators\0\nsetup\flualine\frequire\0" },
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
@@ -190,6 +190,7 @@ _G.packer_plugins = {
     url = "https://github.com/miikanissi/modus-themes.nvim"
   },
   ["neovim-tasks"] = {
+    config = { "\27LJ\2\nó\1\0\0\5\0\n\0\0226\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\6\0'\4\a\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\b\0'\4\t\0B\0\4\1K\0\1\0,:Task set_module_param cmake target<cr>\15<leader>ct\30:Task start cmake run<cr>\15<leader>cr$:Task start cmake configure<cr>\15<leader>cc\6n\bset\vkeymap\bvim\0" },
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/neovim-tasks",
     url = "https://github.com/Shatur/neovim-tasks"
@@ -236,13 +237,13 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["nvim-window"] = {
-    config = { "\27LJ\2\n¹\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\4\fhint_hl\tBold\vborder\vsingle\14normal_hl\vNormal\nchars\0\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0" },
+    config = { "\27LJ\2\n¹\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\4\14normal_hl\vNormal\nchars\0\fhint_hl\tBold\vborder\vsingle\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0" },
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/nvim-window",
     url = "https://github.com/yorickpeterse/nvim-window"
   },
   ["oldworld.nvim"] = {
-    config = { "\27LJ\2\nÔ\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\0024\3\0\0=\3\n\2B\0\2\1K\0\1\0\17integrations\vstyles\1\0\2\17integrations\0\vstyles\0\14functions\1\0\2\tbold\2\vitalic\2\rbooleans\1\0\2\rbooleans\0\14functions\0\1\0\2\tbold\2\vitalic\2\nsetup\roldworld\frequire\0" },
+    config = { "\27LJ\2\nÔ\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\0024\3\0\0=\3\n\2B\0\2\1K\0\1\0\17integrations\vstyles\1\0\2\vstyles\0\17integrations\0\14functions\1\0\2\vitalic\2\tbold\2\rbooleans\1\0\2\14functions\0\rbooleans\0\1\0\2\vitalic\2\tbold\2\nsetup\roldworld\frequire\0" },
     loaded = true,
     path = "/home/metin/.local/share/nvim/site/pack/packer/start/oldworld.nvim",
     url = "https://github.com/dgox16/oldworld.nvim"
@@ -373,50 +374,54 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n[\0\0\5\0\6\0\b6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\1K\0\1\0\28<cmd>:TroubleToggle<cr>\15<leader>gt\6n\bset\vkeymap\bvim\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
--- Config for: git-conflict.nvim
-time([[Config for git-conflict.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17git-conflict\frequire\0", "config", "git-conflict.nvim")
-time([[Config for git-conflict.nvim]], false)
--- Config for: codeium.nvim
-time([[Config for codeium.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\fcodeium\frequire\0", "config", "codeium.nvim")
-time([[Config for codeium.nvim]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
 try_loadstring("\27LJ\2\nP\0\0\5\0\6\0\b6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\1K\0\1\0\17:ZenMode<cr>\15<leader>zz\6n\bset\vkeymap\bvim\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
+-- Config for: vim-highlighter
+time([[Config for vim-highlighter]], true)
+try_loadstring("\27LJ\2\nÍ\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0­\1\t\t\t   let HiErase = '<leader>he'\n\t\t\t   let HiClear = '<leader>hc'\n\t\t\t   let HiFind  = '<leader>hf'\n\t\t\t   let HiSetSL = '<leader>hh'\n\t\t\t   let HiSet   = '<leader>hs'\n\t\t\t\bcmd\bvim\0", "config", "vim-highlighter")
+time([[Config for vim-highlighter]], false)
+-- Config for: codeium.nvim
+time([[Config for codeium.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\fcodeium\frequire\0", "config", "codeium.nvim")
+time([[Config for codeium.nvim]], false)
+-- Config for: oldworld.nvim
+time([[Config for oldworld.nvim]], true)
+try_loadstring("\27LJ\2\nÔ\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\0024\3\0\0=\3\n\2B\0\2\1K\0\1\0\17integrations\vstyles\1\0\2\vstyles\0\17integrations\0\14functions\1\0\2\vitalic\2\tbold\2\rbooleans\1\0\2\14functions\0\rbooleans\0\1\0\2\vitalic\2\tbold\2\nsetup\roldworld\frequire\0", "config", "oldworld.nvim")
+time([[Config for oldworld.nvim]], false)
+-- Config for: neovim-tasks
+time([[Config for neovim-tasks]], true)
+try_loadstring("\27LJ\2\nó\1\0\0\5\0\n\0\0226\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\6\0'\4\a\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\b\0'\4\t\0B\0\4\1K\0\1\0,:Task set_module_param cmake target<cr>\15<leader>ct\30:Task start cmake run<cr>\15<leader>cr$:Task start cmake configure<cr>\15<leader>cc\6n\bset\vkeymap\bvim\0", "config", "neovim-tasks")
+time([[Config for neovim-tasks]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
 -- Config for: nvim-window
 time([[Config for nvim-window]], true)
-try_loadstring("\27LJ\2\n¹\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\4\fhint_hl\tBold\vborder\vsingle\14normal_hl\vNormal\nchars\0\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0", "config", "nvim-window")
+try_loadstring("\27LJ\2\n¹\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\nchars\1\0\4\14normal_hl\vNormal\nchars\0\fhint_hl\tBold\vborder\vsingle\1\27\0\0\6a\6b\6c\6d\6e\6f\6g\6h\6i\6j\6k\6l\6m\6n\6o\6p\6q\6r\6s\6t\6u\6v\6w\6x\6y\6z\nsetup\16nvim-window\frequire\0", "config", "nvim-window")
 time([[Config for nvim-window]], false)
--- Config for: vim-highlighter
-time([[Config for vim-highlighter]], true)
-try_loadstring("\27LJ\2\nÍ\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0­\1\t\t\t   let HiErase = '<leader>he'\n\t\t\t   let HiClear = '<leader>hc'\n\t\t\t   let HiFind  = '<leader>hf'\n\t\t\t   let HiSetSL = '<leader>hh'\n\t\t\t   let HiSet   = '<leader>hs'\n\t\t\t\bcmd\bvim\0", "config", "vim-highlighter")
-time([[Config for vim-highlighter]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\nX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimó\b\1\0\6\0(\0?6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0004\5\0\0=\5\t\0044\5\0\0=\5\n\4=\4\v\0034\4\0\0=\4\f\0035\4\r\0=\4\14\3=\3\16\0025\3\19\0005\4\17\0003\5\18\0>\5\2\4=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\3=\3\31\0025\3!\0004\4\3\0003\5 \0>\5\1\4=\4\20\0034\4\0\0=\4\22\0035\4\"\0=\4\24\0035\4#\0=\4\26\0034\4\0\0=\4\28\0034\4\0\0=\4\30\3=\3$\0024\3\0\0=\3%\0024\3\0\0=\3\n\0024\3\0\0=\3&\0024\3\0\0=\3'\2B\0\2\1K\0\1\0\15extensions\20inactive_winbar\ftabline\22inactive_sections\1\2\0\0\rlocation\1\2\0\0\rfilename\1\0\6\14lualine_y\0\14lualine_c\0\14lualine_b\0\14lualine_a\0\14lualine_z\0\14lualine_x\0\0\rsections\14lualine_z\1\2\0\0\rlocation\14lualine_y\1\2\0\0\rprogress\14lualine_x\1\4\0\0\rencoding\15fileformat\rfiletype\14lualine_c\1\3\0\0\rfilename\17lsp_progress\14lualine_b\1\4\0\0\vbranch\tdiff\16diagnostics\14lualine_a\1\0\6\14lualine_y\0\14lualine_c\0\14lualine_b\0\14lualine_a\0\14lualine_z\0\14lualine_x\0\0\1\2\0\0\tmode\foptions\1\0\a\22inactive_sections\0\15extensions\0\vwinbar\0\rsections\0\ftabline\0\20inactive_winbar\0\foptions\0\frefresh\1\0\3\ftabline\3è\a\vwinbar\3è\a\15statusline\3è\a\17ignore_focus\23disabled_filetypes\vwinbar\15statusline\1\0\2\vwinbar\0\15statusline\0\23section_separators\1\0\2\nright\bî‚²\tleft\bî‚°\25component_separators\1\0\2\nright\bî‚³\tleft\bî‚±\1\0\t\frefresh\0\25component_separators\0\ntheme\tauto\18icons_enabled\2\17globalstatus\1\25always_divide_middle\2\17ignore_focus\0\23disabled_filetypes\0\23section_separators\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+try_loadstring("\27LJ\2\nX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimX\0\0\4\0\4\0\b6\0\0\0009\0\1\0009\0\2\0006\2\0\0009\2\1\0029\2\3\2B\2\1\0C\0\0\0\25nvim_get_current_win\24nvim_win_get_number\bapi\bvimó\b\1\0\6\0(\0?6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0004\5\0\0=\5\t\0044\5\0\0=\5\n\4=\4\v\0034\4\0\0=\4\f\0035\4\r\0=\4\14\3=\3\16\0025\3\19\0005\4\17\0003\5\18\0>\5\2\4=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\3=\3\31\0025\3!\0004\4\3\0003\5 \0>\5\1\4=\4\20\0034\4\0\0=\4\22\0035\4\"\0=\4\24\0035\4#\0=\4\26\0034\4\0\0=\4\28\0034\4\0\0=\4\30\3=\3$\0024\3\0\0=\3%\0024\3\0\0=\3\n\0024\3\0\0=\3&\0024\3\0\0=\3'\2B\0\2\1K\0\1\0\15extensions\20inactive_winbar\ftabline\22inactive_sections\1\2\0\0\rlocation\1\2\0\0\rfilename\1\0\6\14lualine_b\0\14lualine_a\0\14lualine_y\0\14lualine_z\0\14lualine_x\0\14lualine_c\0\0\rsections\14lualine_z\1\2\0\0\rlocation\14lualine_y\1\2\0\0\rprogress\14lualine_x\1\4\0\0\rencoding\15fileformat\rfiletype\14lualine_c\1\3\0\0\rfilename\17lsp_progress\14lualine_b\1\4\0\0\vbranch\tdiff\16diagnostics\14lualine_a\1\0\6\14lualine_b\0\14lualine_a\0\14lualine_y\0\14lualine_z\0\14lualine_x\0\14lualine_c\0\0\1\2\0\0\tmode\foptions\1\0\a\vwinbar\0\22inactive_sections\0\rsections\0\ftabline\0\20inactive_winbar\0\foptions\0\15extensions\0\frefresh\1\0\3\vwinbar\3è\a\15statusline\3è\a\ftabline\3è\a\17ignore_focus\23disabled_filetypes\vwinbar\15statusline\1\0\2\vwinbar\0\15statusline\0\23section_separators\1\0\2\nright\bî‚²\tleft\bî‚°\25component_separators\1\0\2\nright\bî‚³\tleft\bî‚±\1\0\t\frefresh\0\25component_separators\0\ntheme\tauto\18icons_enabled\2\17globalstatus\1\25always_divide_middle\2\17ignore_focus\0\23disabled_filetypes\0\23section_separators\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
--- Config for: oldworld.nvim
-time([[Config for oldworld.nvim]], true)
-try_loadstring("\27LJ\2\nÔ\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\0024\3\0\0=\3\n\2B\0\2\1K\0\1\0\17integrations\vstyles\1\0\2\17integrations\0\vstyles\0\14functions\1\0\2\tbold\2\vitalic\2\rbooleans\1\0\2\rbooleans\0\14functions\0\1\0\2\tbold\2\vitalic\2\nsetup\roldworld\frequire\0", "config", "oldworld.nvim")
-time([[Config for oldworld.nvim]], false)
 -- Config for: fidget.nvim
 time([[Config for fidget.nvim]], true)
 try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
 time([[Config for fidget.nvim]], false)
+-- Config for: git-conflict.nvim
+time([[Config for git-conflict.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17git-conflict\frequire\0", "config", "git-conflict.nvim")
+time([[Config for git-conflict.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n[\0\0\5\0\6\0\b6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\1K\0\1\0\28<cmd>:TroubleToggle<cr>\15<leader>gt\6n\bset\vkeymap\bvim\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
