@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 		requires = { { 'nvim-lua/plenary.nvim' }, { "nvim-lua/popup.nvim" }, { "nvim-telescope/telescope-media-files.nvim" } }
 	}
 
-	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate', lock = true })
 	use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
@@ -90,7 +90,12 @@ return require('packer').startup(function(use)
 
 	use({ "olambo/vi-viz" })
 
-	use({ "folke/zen-mode.nvim" })
+	use({
+		"folke/zen-mode.nvim",
+		config = function()
+			vim.keymap.set("n", "<leader>zz", ":ZenMode<cr>")
+		end
+	})
 
 	use {
 		"mg979/vim-visual-multi",
@@ -101,10 +106,6 @@ return require('packer').startup(function(use)
 	}
 	use {
 		"nvim-treesitter/nvim-treesitter-context"
-	}
-
-	use {
-		"Exafunction/codeium.vim"
 	}
 
 	use {
@@ -145,7 +146,6 @@ return require('packer').startup(function(use)
 	use { "airblade/vim-gitgutter" }
 
 	use 'arkav/lualine-lsp-progress'
-
 
 	use {
 		'nvim-lualine/lualine.nvim',
@@ -199,6 +199,20 @@ return require('packer').startup(function(use)
 		"RRethy/vim-illuminate"
 	}
 
+	use { "Shatur/neovim-tasks" }
+
+	use {
+		"Exafunction/codeium.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"hrsh7th/nvim-cmp",
+		},
+		config = function()
+			require("codeium").setup({
+			})
+		end
+	}
+
 	use {
 		"azabiong/vim-highlighter",
 		config = function()
@@ -212,16 +226,16 @@ return require('packer').startup(function(use)
 		end
 	}
 
-	use{
-		"lcford2/calc.nvim",
+	use 'mfussenegger/nvim-dap'
+
+	use {
+		"j-hui/fidget.nvim",
 		config = function()
-
-			local calc = require("calc_nvim")
-
-			calc.setup({
-			  float_format="0.3",
-			})
-			vim.keymap.set("v", "<C-c>", calc.calculate, {})
+			require("fidget").setup()
 		end
 	}
+
+	require("metin.themes").setup(use)
+
+	use { "folke/which-key.nvim" }
 end)

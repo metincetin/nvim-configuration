@@ -29,7 +29,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
 		vim.keymap.set({ 'n', 'x' }, 'g=', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 		vim.keymap.set('n', 'g.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
-		  vim.keymap.set("n", "<leader>glc", "<cmd>GitConflictListQf<CR>")
+		vim.keymap.set("n", "<leader>glc", "<cmd>GitConflictListQf<CR>")
+		vim.keymap.set("n", "<C-k>", function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled() ,{0}) end)
 
 
 
@@ -69,7 +70,7 @@ cmp.setup({
 		{ name = 'nvim_lsp' },
 	},
 	completion = {
-		completeopt = "menu,menuone,preview,noselect,noinsert",
+		completeopt = "menu,menuone,preview,noinsert",
 	},
 	formatting = {
 		format = function(entry, vim_item)

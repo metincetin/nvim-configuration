@@ -21,6 +21,14 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set('n', '<leader>wsh', ":vsp<cr>")
 vim.keymap.set('n', '<leader>wsv', ":sp<cr>")
 
+vim.keymap.set('n', '<C-w>v', ":vsp<cr>:wincmd w<cr>")
+vim.keymap.set('n', '<C-w><C-v>', ":vsp<cr>:wincmd w<cr>")
+
+vim.keymap.set('n', '<C-w>s', ":sp<cr>:wincmd w<cr>")
+vim.keymap.set('n', '<C-w><C-s>', ":sp<cr>:wincmd w<cr>")
+
+vim.keymap.set('n', '<C-q>', ":q<cr>")
+
 vim.keymap.set('n', '<leader>wa', ":only<cr>")
 
 vim.keymap.set('n', '<leader>wo', ":wincmd w<cr>")
@@ -43,6 +51,19 @@ vim.keymap.set('n', '<leader>fed', ":e ~/.config/nvim<cr>")
 vim.keymap.set('n', '<leader>bp', ":bprevious<cr>")
 vim.keymap.set('n', '<leader>bn', ":bnext<cr>")
 vim.keymap.set('n', '<leader>bx', ":bd<cr>")
+
+vim.keymap.set('n', '<leader>pa', ":Alpha<cr>")
+
+vim.keymap.set("n", "<leader>bX", ":%bd|e#<cr>")
+
+
+-- winjump
+i = 1
+while i <= 9
+do
+	vim.keymap.set("n", "<leader>" .. i, ":" .. i .. "wincmd w<cr>")
+	i= i + 1
+end
 
 
 vim.keymap.set("n", "<C-s>", function()
