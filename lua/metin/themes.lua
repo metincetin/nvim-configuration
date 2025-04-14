@@ -5,6 +5,9 @@ function module.setup(use)
 	use 'javiorfo/nvim-nyctophilia'
 	use "seandewar/paragon.vim"
 	use "miikanissi/modus-themes.nvim"
+	use "EdenEast/nightfox.nvim"
+	use {'nyoom-engineering/oxocarbon.nvim'}
+
 	use { "dgox16/oldworld.nvim",
 	config = function()
 		require("oldworld").setup({

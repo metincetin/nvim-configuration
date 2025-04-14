@@ -7,6 +7,12 @@ telescope.setup {
 		file_ignore_patterns = { "%.meta", "%.asset" }
 	},
 
+	pickers = {
+		colorscheme = {
+			enable_preview = true
+		}
+	}
+
 	-- pickers = {
 	-- 	lsp_references = {
 	-- 		theme = "cursor",
