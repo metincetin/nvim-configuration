@@ -208,17 +208,17 @@ return require('packer').startup(function(use)
 		end
 	}
 
-	use {
-		"Exafunction/codeium.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim",
-			"hrsh7th/nvim-cmp",
-		},
-		config = function()
-			require("codeium").setup({
-			})
-		end
-	}
+	--use {
+	--	"Exafunction/codeium.nvim",
+	--	requires = {
+	--		"nvim-lua/plenary.nvim",
+	--		"hrsh7th/nvim-cmp",
+	--	},
+	--	config = function()
+	--		require("codeium").setup({
+	--		})
+	--	end
+	--}
 
 	use {
 		"azabiong/vim-highlighter",
@@ -245,4 +245,6 @@ return require('packer').startup(function(use)
 	require("metin.themes").setup(use)
 
 	use { "folke/which-key.nvim" }
+	use { "xiyaowong/transparent.nvim" }
+	use { "stevearc/oil.nvim"}
 end)

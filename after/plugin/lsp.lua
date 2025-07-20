@@ -60,6 +60,9 @@ require('mason-lspconfig').setup({
 	},
 })
 
+
+default_setup("gdscript")
+
 local cmp = require('cmp')
 
 cmp.setup({

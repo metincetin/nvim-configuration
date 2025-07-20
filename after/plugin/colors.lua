@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("kanagawa")
--- vim.cmd.colorscheme("oldworld")
-
 vim.cmd.colorscheme("oxocarbon")
+-- vim.cmd.colorscheme("vim")
+
+require("transparent").setup({ })

@@ -28,5 +28,5 @@ vim.diagnostic.goto_prev { float = false }
 
 if vim.g.neovide then
 	-- disable cursor animation
-	vim.g.neovide_cursor_animation_length = 0
+	-- vim.g.neovide_cursor_animation_length = 0
 end
