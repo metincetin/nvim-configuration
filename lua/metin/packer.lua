@@ -247,4 +247,9 @@ return require('packer').startup(function(use)
 	use { "folke/which-key.nvim" }
 	use { "xiyaowong/transparent.nvim" }
 	use { "stevearc/oil.nvim"}
+
+	use {
+	  'stevearc/overseer.nvim',
+	  config = function() require('overseer').setup() end
+	}
 end)

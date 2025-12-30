@@ -6,6 +6,7 @@ if vim.g.neovide then
     -- Put anything you want to happen only in Neovide here
 	vim.g.neovide_floating_blur_amount_x = 2.0
 	vim.g.neovide_floating_blur_amount_y = 2.0
+	vim.o.guifont = "Cousine Nerd Font Mono:h17"
 end
 
 vim.cmd [[

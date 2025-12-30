@@ -1,3 +1,5 @@
+local luasnip = require("luasnip")
+
 -- note: diagnostics are not exclusive to lsp servers
 -- so these can be global keybindings
 vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
@@ -31,6 +33,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'g.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 		vim.keymap.set("n", "<leader>glc", "<cmd>GitConflictListQf<CR>")
 		vim.keymap.set("n", "<C-k>", function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled() ,{0}) end)
+		vim.keymap.set("n", "gh", vim.lsp.buf.signature_help)
+
+		vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, { noremap=true, silent=true })
 
 
 
@@ -85,17 +90,28 @@ cmp.setup({
 		-- Enter key confirms completion item
 		['<CR>'] = cmp.mapping.confirm({ select = true }),
 		["<Tab>"] = cmp.mapping(function(fallback)
-		     -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
-		     if cmp.visible() then
-		   	local entry = cmp.get_selected_entry()
-		   	if not entry then
-		   	  cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
-		   	end
-		   	cmp.confirm()
-		     else
-		   	fallback()
-		     end
-		   end, {"i","s","c",}),
+			if cmp.visible() then
+				local entry = cmp.get_selected_entry()
+				if not entry then
+					cmp.select_next_item({behaviour = cmp.SelectBehavior.Select })
+				end
+				cmp.confirm()
+			end
+			if luasnip.locally_jumpable(1) then
+				luasnip.jump(1)
+			else
+				fallback()
+			end
+		end, {"i","s","c",}),
+		["<S-Tab>"] = cmp.mapping(function(fallback)
+			if luasnip.locally_jumpable(-1) then
+				luasnip.jump(-1)
+			else
+				fallback()
+			end
+		end, {"i","s","c",}),
+
+
 		-- Ctrl + space triggers completion menu
 		['<C-Space>'] = cmp.mapping.complete(),
 	}),
