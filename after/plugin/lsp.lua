@@ -17,35 +17,47 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		-- because they only work if you have an active language server
 		--
 		local telescope = require("telescope.builtin")
+		local client = vim.lsp.get_client_by_id(event.data.client_id)
 
+		-- ls-overloads
+		--- Guard against servers without the signatureHelper capability
+		if client.server_capabilities.signatureHelpProvider then
+			require('lsp-overloads').setup(client, {
+				keymaps = {
+					next_signature = "<C-n>",
+					previous_signature = "<C-p>",
+					next_parameter = "<C-l>",
+					previous_paramter = "<C-h>",
+				}
+			})
+		end
 
 		vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
 		vim.keymap.set('n', 'gd', telescope.lsp_definitions, opts)
 		vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
 		vim.keymap.set('n', 'gi', telescope.lsp_implementations, opts)
 		vim.keymap.set('n', 'gO', telescope.lsp_type_definitions, opts)
-		vim.keymap.set('n', 'go', '<cmd>ClangdSwitchSourceHeader<cr>')
+		vim.keymap.set('n', 'go', function()
+			vim.lsp.buf_request(0, 'textDocument/switchSourceHeader', { uri = vim.uri_from_bufnr(0) },
+				function(err, result)
+					if err then return vim.notify("LSP Error: " .. err.message, vim.log.levels.ERROR) end
+					if not result then return vim.notify("Corresponding file not found", vim.log.levels.WARN) end
+					vim.api.nvim_command('edit ' .. vim.uri_to_fname(result))
+				end)
+		end)
 		vim.keymap.set('n', 'gr', telescope.lsp_references, opts)
 		vim.keymap.set('n', 'gt', telescope.lsp_dynamic_workspace_symbols, opts)
 		vim.keymap.set('n', 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-		vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
+		vim.keymap.set('n', 'gs', '<cmd>LspOverloadsSignature<CR>', opts)
+		vim.keymap.set('n', 'gh', '<cmd>LspOverloadsSignature<CR>', opts)
+		vim.keymap.set('i', '<C-s>', '<cmd>LspOverloadsSignature<CR>', opts)
 		vim.keymap.set({ 'n', 'x' }, 'g=', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 		vim.keymap.set('n', 'g.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 		vim.keymap.set("n", "<leader>glc", "<cmd>GitConflictListQf<CR>")
-		vim.keymap.set("n", "<C-k>", function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled() ,{0}) end)
-		vim.keymap.set("n", "gh", vim.lsp.buf.signature_help)
+		vim.keymap.set("n", "<C-k>",
+			function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(), { 0 }) end)
 
-		vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, { noremap=true, silent=true })
-
-
-
-		local client = vim.lsp.get_client_by_id(event.data.client_id)
-
-		-- ls-overloads
-		  --- Guard against servers without the signatureHelper capability
-		  if client.server_capabilities.signatureHelpProvider then
-			require('lsp-overloads').setup(client, { })
-		  end
+		vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, { noremap = true, silent = true })
 	end
 })
 
@@ -85,7 +97,7 @@ cmp.setup({
 			vim_item.menu = entry:get_completion_item().detail
 			return vim_item
 		end
-	};
+	},
 	mapping = cmp.mapping.preset.insert({
 		-- Enter key confirms completion item
 		['<CR>'] = cmp.mapping.confirm({ select = true }),
@@ -93,7 +105,7 @@ cmp.setup({
 			if cmp.visible() then
 				local entry = cmp.get_selected_entry()
 				if not entry then
-					cmp.select_next_item({behaviour = cmp.SelectBehavior.Select })
+					cmp.select_next_item({ behaviour = cmp.SelectBehavior.Select })
 				end
 				cmp.confirm()
 			end
@@ -102,14 +114,14 @@ cmp.setup({
 			else
 				fallback()
 			end
-		end, {"i","s","c",}),
+		end, { "i", "s", "c", }),
 		["<S-Tab>"] = cmp.mapping(function(fallback)
 			if luasnip.locally_jumpable(-1) then
 				luasnip.jump(-1)
 			else
 				fallback()
 			end
-		end, {"i","s","c",}),
+		end, { "i", "s", "c", }),
 
 
 		-- Ctrl + space triggers completion menu

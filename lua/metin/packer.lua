@@ -85,7 +85,9 @@ return require('packer').startup(function(use)
 	})
 
 
-	use { "folke/flash.nvim" }
+	use {
+		"folke/flash.nvim",
+	}
 	use({ "rebelot/kanagawa.nvim" })
 
 	use({ "olambo/vi-viz" })
@@ -246,10 +248,19 @@ return require('packer').startup(function(use)
 
 	use { "folke/which-key.nvim" }
 	use { "xiyaowong/transparent.nvim" }
-	use { "stevearc/oil.nvim"}
+	use { "stevearc/oil.nvim" }
 
 	use {
-	  'stevearc/overseer.nvim',
-	  config = function() require('overseer').setup() end
+		'stevearc/overseer.nvim',
+		config = function() require('overseer').setup() end
+	}
+
+	use {
+		"apyra/nvim-unity-sync",
+		config = function()
+			require("unity.plugin").setup({
+			})
+		end,
+		ft = "cs",
 	}
 end)
