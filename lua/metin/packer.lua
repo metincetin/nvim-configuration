@@ -201,14 +201,16 @@ return require('packer').startup(function(use)
 		"RRethy/vim-illuminate"
 	}
 
-	use {
-		"Shatur/neovim-tasks",
-		config = function()
-			vim.keymap.set("n", "<leader>cc", ":Task start cmake configure<cr>")
-			vim.keymap.set("n", "<leader>cr", ":Task start cmake run<cr>")
-			vim.keymap.set("n", "<leader>ct", ":Task set_module_param cmake target<cr>")
-		end
-	}
+	use{ "Civitasv/cmake-tools.nvim", }
+
+	-- use {
+	-- 	"Shatur/neovim-tasks",
+	-- 	config = function()
+	-- 		vim.keymap.set("n", "<leader>cc", ":Task start cmake configure<cr>")
+	-- 		vim.keymap.set("n", "<leader>cr", ":Task start cmake run<cr>")
+	-- 		vim.keymap.set("n", "<leader>ct", ":Task set_module_param cmake target<cr>")
+	-- 	end
+	-- }
 
 	--use {
 	--	"Exafunction/codeium.nvim",
@@ -264,3 +266,4 @@ return require('packer').startup(function(use)
 		ft = "cs",
 	}
 end)
+
